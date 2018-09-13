@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view >
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view bindtap='clickNavigtor' id="item-{{id}}">{{message}}</view>
+  <view wx:if="{{condition}}"> this is {{condition}}</view>
+  <checkbox checked='{{true}}'></checkbox>
+  <view hidden='{{flag?true:false}}'>Hidden</view>
+  <view>{{a+b}}+{{c}}+d</view>
+  <view>{{"hello"+name}}</view>
+  <view>{{object.key}} {{array[0]}}</view>
+  <view wx:for="{{[a,0,3,6,7]}}">{{index}}:{{item}}</view>
+  <!-- <template is="objectCombin" data="{{key1:a,key2:b}}"> </template> -->
+  <!-- <template is="objectCombin" data="{{...object,key1:a,key2:b}}"> </template> -->
+
+  <button bindtap='navitoprastice'>to practise</button>
+  <button bindtap='navitorequest' class='requestmargin' >request</button>
+  
+</view>

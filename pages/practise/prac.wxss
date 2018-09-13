@@ -1,0 +1,17 @@
+/* pages/practise/prac.wxss */
+.textstytle{
+  align-items: center;
+  text-align: center;
+  color: aqua;
+  background-color: black
+  
+}
+.flex-wrp {display: flex;}
+
+.textwrap{
+  display: flex;
+  flex-direction:  column
+}
+.bc_green {background: green;width:100px; height: 100px;}
+.bc_red {background: red;width:100px; height: 100px;}
+.bc_blue {background: blue;width:100px; height: 100px;}

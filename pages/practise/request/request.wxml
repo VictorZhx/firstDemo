@@ -1,0 +1,20 @@
+<!--pages/practise/request/request.wxml-->
+<text>pages/practise/request/request.wxml</text>
+
+<view >
+<button bindtap='requestJoy'>{{requestbtn}}</button>
+</view>
+
+<view >
+
+<block wx:for="{{datalist}}" wx:key="{{item.title}}">
+  <view>
+
+  <image src='{{item.thumbnail_pic_s}}'></image>
+  <view>{{item.title}}</view>
+  <view>{{item.date}}</view>
+
+  </view>
+
+ </block>
+</view>
