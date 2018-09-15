@@ -74,5 +74,16 @@ Page({
     wx.navigateTo({
       url: '/pages/practise/request/request',
     })
+  },
+  navitohome:function(){
+    wx.navigateTo({
+      url: '/pages/practise/demo/home',
+    })
   }
+
+
+
+
+
 })
+

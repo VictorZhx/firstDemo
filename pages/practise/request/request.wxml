@@ -10,9 +10,9 @@
 <block wx:for="{{datalist}}" wx:key="{{item.title}}">
   <view>
 
-  <image src='{{item.thumbnail_pic_s}}'></image>
-  <view>{{item.title}}</view>
-  <view>{{item.date}}</view>
+  <image src='{{item.thumbnail_pic_s}}' class='image'></image>
+  <view class='title'>{{item.title}}</view>
+  <view class='date'>{{item.date}}</view>
 
   </view>
 

@@ -1,0 +1,55 @@
+<!--pages/practise/demo/home.wxml-->
+<text>pages/practise/demo/home.wxml</text>
+
+<view>
+
+#头部标题
+<view> 
+   <view>WEUI</view>
+   <view> WeUI 是一套微信原生视觉体验一致的基础样式库，由微信官方涉及团队为微信内部网页和微信小程序量身设计，领用户的使用感知更加统一</view>
+
+</view>
+
+#列表
+<view>
+   <view>
+      <block wx:for="{{list}}" wx:key="id">
+          <view id='{{item.id}}' bindtap='kindtaggle'>
+            <view>
+               <view>{{item.name}}</view>
+               <image src='images/icon_nav_{{item.id}}.png'></image>
+            </view>
+            <view>
+                <view>
+                     <block wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+
+                           <navigator>
+                                 <view>{{page}}</view>
+                                 <view></view>
+                           
+                           </navigator>
+                     
+                     
+                     
+                     </block>
+                
+                
+                </view>
+            
+            
+            </view>
+          
+          </view>
+
+      </block>
+   
+   
+   
+   </view>
+
+
+</view>
+
+
+
+</view>

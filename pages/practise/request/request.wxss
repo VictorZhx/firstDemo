@@ -1,1 +1,17 @@
 /* pages/practise/request/request.wxss */
+.image{
+  margin: 10px;
+  padding: 20px;
+  
+}
+.title{
+  margin:10pt 10pt 10pt 20pt;
+  padding-left: 10pt;
+  text-align: left;
+
+
+}
+.date {
+  margin-right: 0;
+   align-items: right;
+}

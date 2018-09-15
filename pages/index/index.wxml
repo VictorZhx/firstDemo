@@ -17,11 +17,12 @@
   <view>{{a+b}}+{{c}}+d</view>
   <view>{{"hello"+name}}</view>
   <view>{{object.key}} {{array[0]}}</view>
-  <view wx:for="{{[a,0,3,6,7]}}">{{index}}:{{item}}</view>
+  <!-- <view wx:for="{{[a,0,3,6,7]}}">{{index}}:{{item}}</view> -->
   <!-- <template is="objectCombin" data="{{key1:a,key2:b}}"> </template> -->
   <!-- <template is="objectCombin" data="{{...object,key1:a,key2:b}}"> </template> -->
 
   <button bindtap='navitoprastice'>to practise</button>
   <button bindtap='navitorequest' class='requestmargin' >request</button>
+  <button bindtap='navitohome' class='requestmargin' >home</button>
   
 </view>

@@ -5,7 +5,8 @@
     "pages/practise/prac",
     "pages/practise/scroll/scrollpage",
     "pages/practise/swiper/swiperpage",
-    "pages/practise/request/request"
+    "pages/practise/request/request",
+    "pages/practise/demo/home"
   ],
   "window": {
     "backgroundTextStyle": "light",
